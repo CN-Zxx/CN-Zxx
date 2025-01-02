@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Player Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <video id="myVideo" controls width="640" height="360">
+  <h1 class="center">欢迎来到视频播放器网站</h1>
+  <p style="text-align: center;">在这里，您可以观看各种精彩的视频。</p>
+  <video id="myVideo" controls width="640" height="360" muted>
     <source src="meinv.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <p>您的浏览器不支持视频标签。</p>
   </video>
+  <script>
+    window.onload = function() {
+      var video = document.getElementById('myVideo');
+      video.play();
+    };
+  </script>
   <script src="script.js"></script>
 </body>
-
 </html>
