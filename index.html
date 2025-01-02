@@ -7,8 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- 添加导航栏 -->
+  <nav>
+    <ul style="text-align: center;">
+      <li style="display: inline-block;"><a href="#">首页</a></li>
+      <li style="display: inline-block;"><a href="#">视频</a></li>
+      <li style="display: inline-block;"><a href="#">关于我们</a></li>
+      <li style="display: inline-block;"><a href="#">联系我们</a></li>
+    </ul>
+  </nav>
+
   <h1 class="center">欢迎来到视频播放器网站</h1>
   <p style="text-align: center;">在这里，您可以观看各种精彩的视频。</p>
+  <div style="text-align: center;">
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/sbx7W6Zn9OM" title="夜之脈動：面向未来的工业电子与科技音律" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
   <video id="myVideo" controls width="640" height="360" muted>
     <source src="meinv.mp4" type="video/mp4">
     <p>您的浏览器不支持视频标签。</p>
